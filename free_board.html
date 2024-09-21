@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style2.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,700;1,700&family=Roboto:ital,wght@1,500&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,700;1,700&family=Nanum+Gothic&family=Roboto&display=swap');
+            h1,button{
+                font-family: "Roboto", sans-serif;
+                font-weight: 300;
+                font-style: italic;
+            }
+            h2,h3,h4,h5,a{
+                font-family: "Cabin", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: 700;
+                font-style: normal;
+                font-variation-settings:
+                    "width" 100;
+            }
+            p{
+                font-family: "Nanum Gothic", sans-serif;
+                font-weight: 400;
+                font-style: normal;                
+            }
+        </style>
+        <script>
+            window.onload = function() {
+                const username = sessionStorage.getItem('username');
+                if (username) {
+                    let a=document.getElementById('welcome-message').value;
+                } else {
+                    let b=document.getElementById('welcome-message').innerText = '닉네임이 설정되어있지 않습니다.';
+                }
+            }
+        </script>
+    </head>
+    <body style="background-color: azure;">
+        <div class="main">
+            <div style="display:block;height:32px"></div>
+            <div style="padding-left:1350px">
+                <a href="notfound.html" class="hyperlink" style="position:absolute">Click To Login</a>
+            </div>
+            <div class="first">
+                <h1 class="T">Algo.dict</h1>
+                <a href="free_board.html" class="menu" style="display : inline; position:absolute; margin-left:200px">자유게시판</a>
+                <a href="question_board.html" class="menu" style="display : inline; position:absolute; margin-left:500px">질문게시판</a>
+                <a href="dict_board.html" class="menu" style="display : inline; position:absolute; margin-left:800px">알고리즘 사전</a>
+            </div> 
+            <div style="display:block;height:32px"></div>
+        </div>
+        <div style="display:block;height:4px;background-color:red"></div>
+        <div style="display:block;height:64px"></div>
+        <div style="font-size:40px; text-align:center; margin-top:-40px">
+            <p>자유게시판</p>
+        </div>        
+        <button style="margin-left:1200px; width:100px; height: 50px; border-radius:18px; color:white; background-color:black; border:none">글 쓰기</button>
+        <div style="display:block;height:128px"></div>
+        <div style="text-align:center; font-size:10px">
+            <h1>글 쓰기 버튼을 눌러 첫 번째 글을 작성해보세요 !</h1>
+        </div>
+    </body>
+</html>

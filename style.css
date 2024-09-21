@@ -1,0 +1,53 @@
+/*body{
+    background-color: rgb(133, 133, 94);
+}*/
+button{
+    width:120px;
+    height:40px;
+    background-color: blue;
+    border:none;
+    color: white;
+    box-shadow:0 4px 16px rgba(0,79,255,0.8);
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 20px;
+    position:absolute;
+    top:50%;
+    left:10%;
+    transform:translate(-50%,-50%);
+    transition:0.5s;
+}
+button:focus{
+    outline:0;
+}
+button:hover{
+    background-color: rgba(0,79,255,0.8);
+    cursor:pointer;
+    box-shadow:0 2px 4px rgba(0,79,255,0.8);
+}
+.card{
+    border-radius:8px;
+    width:500px;
+    height:720px;  
+    box-shadow:0 20px 35px magenta;
+}
+.img-gradient{
+    position:absolute;
+    left:0;
+    right:0;
+    top:0;
+
+    width:100%;
+    height:100%;
+    /*background:linear-gradient(black,rgba(0,0,0,1));*/
+}
+.text-wrap{
+    position:absolute;
+    bottom:0;
+    padding:24px;
+    z-index:2;
+}
+.top{
+    background:black;
+    color:rgb(43, 255, 131)
+}
